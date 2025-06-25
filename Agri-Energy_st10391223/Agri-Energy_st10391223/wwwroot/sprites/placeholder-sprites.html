@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Sprite Placeholders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .sprite-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .sprite-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .sprite-canvas {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            display: block;
+        }
+        h2 {
+            color: #1E4D24;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .download-btn {
+            background-color: #1E4D24;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pixel Art Sprite Placeholders</h2>
+    <p>These are placeholder sprites for the About page. Replace with actual pixel art sprites.</p>
+    
+    <div class="sprite-grid">
+        <div class="sprite-item">
+            <canvas id="sprite_farmer" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_farmer.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_farmer', 'sprite_farmer.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_crop_field" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_crop_field.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_crop_field', 'sprite_crop_field.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_energy_icon" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_energy_icon.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_energy_icon', 'sprite_energy_icon.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_connected_ecosystem" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_connected_ecosystem.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_connected_ecosystem', 'sprite_connected_ecosystem.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_clipboard_employee" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_clipboard_employee.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_clipboard_employee', 'sprite_clipboard_employee.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_secure_lock" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_secure_lock.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_secure_lock', 'sprite_secure_lock.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="sprite_data_chart" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>sprite_data_chart.png</p>
+            <button class="download-btn" onclick="downloadSprite('sprite_data_chart', 'sprite_data_chart.png')">Download</button>
+        </div>
+        
+        <div class="sprite-item">
+            <canvas id="search_icon" class="sprite-canvas" width="32" height="32"></canvas>
+            <p>search_icon.png</p>
+            <button class="download-btn" onclick="downloadSprite('search_icon', 'search_icon.png')">Download</button>
+        </div>
+    </div>
+
+    <script>
+        // Draw simple pixel art placeholders
+        const colors = {
+            farmer: '#8B5E3C',
+            crop: '#1E4D24',
+            energy: '#F4D03F',
+            ecosystem: '#68A4D4',
+            employee: '#2e8687',
+            lock: '#444444',
+            data: '#9b59b6',
+            search: '#e74c3c'
+        };
+
+        function drawPixelIcon(canvasId, color) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const pixelSize = 4;
+            
+            // Fill with light background
+            ctx.fillStyle = '#f5f5f5';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw simple pixel pattern
+            ctx.fillStyle = color;
+            
+            // Different patterns based on sprite type
+            if (canvasId === 'sprite_farmer') {
+                // Farmer hat and body
+                for (let x = 4; x < 28; x+=pixelSize) {
+                    for (let y = 4; y < 28; y+=pixelSize) {
+                        if ((y < 12 && x > 8 && x < 24) || // hat
+                            (y >= 12 && y < 28 && x > 12 && x < 20)) { // body
+                            ctx.fillRect(x, y, pixelSize, pixelSize);
+                        }
+                    }
+                }
+            } else if (canvasId === 'sprite_crop_field') {
+                // Crop rows
+                for (let x = 4; x < 28; x+=pixelSize*2) {
+                    for (let y = 12; y < 28; y+=pixelSize) {
+                        ctx.fillRect(x, y, pixelSize, pixelSize);
+                    }
+                }
+            } else if (canvasId === 'sprite_energy_icon') {
+                // Energy symbol
+                for (let x = 14; x < 18; x+=pixelSize) {
+                    for (let y = 4; y < 28; y+=pixelSize) {
+                        ctx.fillRect(x, y, pixelSize, pixelSize);
+                    }
+                }
+                for (let x = 6; x < 26; x+=pixelSize) {
+                    for (let y = 14; y < 18; y+=pixelSize) {
+                        ctx.fillRect(x, y, pixelSize, pixelSize);
+                    }
+                }
+            } else if (canvasId === 'sprite_connected_ecosystem') {
+                // Globe
+                ctx.beginPath();
+                ctx.arc(16, 16, 12, 0, 2 * Math.PI);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.fillStyle = '#ffffff';
+                // Network lines
+                ctx.fillRect(10, 10, pixelSize, pixelSize);
+                ctx.fillRect(22, 10, pixelSize, pixelSize);
+                ctx.fillRect(10, 22, pixelSize, pixelSize);
+                ctx.fillRect(22, 22, pixelSize, pixelSize);
+                ctx.fillRect(16, 16, pixelSize, pixelSize);
+            } else if (canvasId === 'sprite_clipboard_employee') {
+                // Clipboard
+                ctx.fillRect(8, 4, 16, 24);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(12, 8, 8, 16);
+            } else if (canvasId === 'sprite_secure_lock') {
+                // Lock
+                ctx.fillRect(10, 12, 12, 16);
+                ctx.fillRect(8, 8, 16, 4);
+            } else if (canvasId === 'sprite_data_chart') {
+                // Bar chart
+                ctx.fillRect(4, 24, 4, 4);
+                ctx.fillRect(12, 16, 4, 12);
+                ctx.fillRect(20, 8, 4, 20);
+                ctx.fillStyle = '#666';
+                ctx.fillRect(4, 28, 24, 1);
+                ctx.fillRect(4, 4, 1, 24);
+            } else if (canvasId === 'search_icon') {
+                // Magnifying glass
+                ctx.beginPath();
+                ctx.arc(14, 14, 8, 0, 2 * Math.PI);
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = color;
+                ctx.fillRect(20, 20, 8, 3);
+                ctx.fillRect(20, 20, 3, 8);
+            }
+        }
+
+        // Draw each sprite
+        drawPixelIcon('sprite_farmer', colors.farmer);
+        drawPixelIcon('sprite_crop_field', colors.crop);
+        drawPixelIcon('sprite_energy_icon', colors.energy);
+        drawPixelIcon('sprite_connected_ecosystem', colors.ecosystem);
+        drawPixelIcon('sprite_clipboard_employee', colors.employee);
+        drawPixelIcon('sprite_secure_lock', colors.lock);
+        drawPixelIcon('sprite_data_chart', colors.data);
+        drawPixelIcon('search_icon', colors.search);
+
+        // Download function
+        function downloadSprite(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        }
+    </script>
+</body>
+</html>

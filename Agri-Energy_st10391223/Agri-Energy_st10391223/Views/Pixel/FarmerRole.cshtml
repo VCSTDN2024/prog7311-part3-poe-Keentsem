@@ -1,0 +1,218 @@
+@{
+    ViewData["Title"] = "Farmer Role";
+}
+
+<link rel="stylesheet" href="~/css/pixel-theme.css" />
+
+<div class="container page-transition">
+    <!-- Navigation -->
+    <nav class="pixel-nav mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="pixel-nav-link" href="/">
+                        <img src="~/images/eco_baby.png" alt="Home" class="pixel-nav-icon" />
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="pixel-nav-link active" href="#">
+                        <img src="~/images/farmer_icon.png" alt="Farmer" class="pixel-nav-icon" />
+                        Farmer Resource Center
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header Section -->
+    <section class="pixel-section-header">
+        <img src="~/images/farmer_icon.png" alt="Farmer Resources" class="pixel-header-icon" />
+        <h1 class="pixel-header-title">Sustainable Farming Resource Center</h1>
+    </section>
+
+    <!-- Description and Introduction -->
+    <div class="pixel-border mb-4">
+        <h2 class="text-center mb-3" style="color: #2e8687;">Farming Best Practices</h2>
+        <p>
+            Welcome to the Farmer Resource Center - your hub for sustainable farming techniques and best practices.
+            Learn how to optimize your farming operations while promoting sustainability and efficiency.
+        </p>
+    </div>
+
+    <div class="pixel-divider"></div>
+    
+    <!-- Resource Categories -->
+    <div class="pixel-grid">
+        <!-- Water Saving Resources -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/farmer_icon.png" alt="Water Saving" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Water Conservation</h4>
+                <p class="pixel-card-text">Discover techniques to optimize water usage and implement water-saving irrigation systems.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="~/images/clipboard_icon.png" alt="Checklist" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem;">5 Techniques</span>
+                </div>
+                <a href="#" class="pixel-btn">View Guide</a>
+            </div>
+        </div>
+
+        <!-- Organic Methods -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/farmer_icon.png" alt="Organic" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Organic Farming</h4>
+                <p class="pixel-card-text">Learn about organic pest control, natural fertilizers, and certification processes.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="~/images/calender_tomato.png" alt="Calendar" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem;">Season Guide</span>
+                </div>
+                <a href="#" class="pixel-btn">View Guide</a>
+            </div>
+        </div>
+
+        <!-- Soil Management -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/farmer_icon.png" alt="Soil" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Soil Management</h4>
+                <p class="pixel-card-text">Techniques for improving soil health, nutrient management, and preventing erosion.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="~/images/clipboard_icon.png" alt="Checklist" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem;">Soil Health Guide</span>
+                </div>
+                <a href="#" class="pixel-btn">View Guide</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seasonal Planner -->
+    <div class="pixel-divider"></div>
+
+    <h3 class="mb-3" style="color: #2e8687;">Seasonal Planting Calendar</h3>
+    
+    <div class="pixel-border">
+        <div class="d-flex align-items-center mb-3">
+            <img src="~/images/calender_tomato.png" alt="Calendar" style="width: 48px; height: 48px; margin-right: 15px;" />
+            <h4 style="color: #2e8687; margin: 0;">Planting & Harvest Schedule</h4>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card" style="border: 2px solid #2e8687;">
+                    <div class="card-header text-white" style="background-color: #2e8687;">
+                        Spring
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>🌱 Tomatoes (Early May)</li>
+                            <li>🌱 Peppers (Late April)</li>
+                            <li>🌱 Lettuce (March-May)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card" style="border: 2px solid #2e8687;">
+                    <div class="card-header text-white" style="background-color: #2e8687;">
+                        Summer
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>🌱 Corn (Late May)</li>
+                            <li>🌱 Cucumber (Early June)</li>
+                            <li>🌱 Zucchini (June)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card" style="border: 2px solid #2e8687;">
+                    <div class="card-header text-white" style="background-color: #2e8687;">
+                        Fall
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>🌱 Spinach (September)</li>
+                            <li>🌱 Kale (August-September)</li>
+                            <li>🌱 Garlic (October)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card" style="border: 2px solid #2e8687;">
+                    <div class="card-header text-white" style="background-color: #2e8687;">
+                        Winter
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>🌱 Winter Squash (Store)</li>
+                            <li>🌱 Root Vegetables (Store)</li>
+                            <li>🌱 Planning for Spring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklists and Registration -->
+    <div class="pixel-divider"></div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/clipboard_icon.png" alt="Checklist" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Sustainable Farming Checklist</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Soil testing completed
+                        <span class="badge badge-success">✓</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Implement water conservation measures
+                        <span class="badge badge-success">✓</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Plan crop rotation
+                        <span class="badge badge-secondary">Pending</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Set up renewable energy sources
+                        <span class="badge badge-secondary">Pending</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/calender_tomato.png" alt="Calendar" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Upcoming Workshops</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Organic Pest Management
+                        <span class="badge" style="background-color: #2e8687; color: white;">May 22</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Water-Efficient Irrigation Systems
+                        <span class="badge" style="background-color: #2e8687; color: white;">June 5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Soil Health Improvement
+                        <span class="badge" style="background-color: #2e8687; color: white;">June 18</span>
+                    </li>
+                </ul>
+                <div class="mt-3">
+                    <a href="#" class="pixel-btn">Register for Workshops</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

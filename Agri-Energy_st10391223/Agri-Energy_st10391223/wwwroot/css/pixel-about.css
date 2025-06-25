@@ -1,0 +1,228 @@
+/* Pixel-Art About Page Stylesheet */
+
+/* Define our core color scheme as specified */
+:root {
+    --leaf-green: #1E4D24;
+    --energy-yellow: #F4D03F;
+    --soil-brown: #8B5E3C;
+    --sky-blue: #68A4D4;
+    --teal: #2e8687; /* User's preferred teal color */
+}
+
+body {
+    font-family: "Press Start 2P", cursive;
+    background: #f9f9e0;
+    color: var(--leaf-green);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    image-rendering: pixelated;
+}
+
+/* Pixelated rendering for all images */
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Container with pixel border */
+.pixelart-container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 32px;
+    background-color: #fff;
+    border: 2px solid var(--leaf-green);
+    box-shadow: 8px 8px 0 rgba(30, 77, 36, 0.3);
+    position: relative;
+}
+
+/* Header Section */
+.pixelart-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--soil-brown);
+}
+
+.pixelart-logo {
+    max-width: 300px;
+    margin: 0 auto 32px;
+    display: block;
+    box-shadow: 6px 6px 0 rgba(139, 94, 60, 0.4);
+}
+
+.pixelart-title {
+    color: var(--leaf-green);
+    text-shadow: 4px 4px 0 var(--energy-yellow);
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 16px;
+    letter-spacing: -1px;
+}
+
+/* Platform Overview */
+.pixelart-overview {
+    background-color: rgba(30, 77, 36, 0.1);
+    border: 2px solid var(--soil-brown);
+    padding: 16px;
+    margin-bottom: 32px;
+    box-shadow: 4px 4px 0 rgba(139, 94, 60, 0.3);
+}
+
+.pixelart-description {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--leaf-green);
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+}
+
+/* Features Grid with 3-column layout */
+.pixelart-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.pixelart-feature-item {
+    border: 2px solid var(--soil-brown);
+    padding: 16px;
+    background-color: #fff9e0;
+    box-shadow: 4px 4px 0 rgba(139, 94, 60, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects as requested */
+.pixelart-feature-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 6px 6px 0 rgba(139, 94, 60, 0.4);
+    background-color: #fffbea;
+}
+
+.pixelart-sprite-container {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    background-color: rgba(244, 208, 63, 0.1);
+    border: 2px solid var(--soil-brown);
+    padding: 8px;
+}
+
+.pixelart-sprite {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.pixelart-sprite-title {
+    color: var(--leaf-green);
+    font-size: 0.7rem;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    border-bottom: 2px solid var(--energy-yellow);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.pixelart-sprite-desc {
+    color: #333;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Footer with pixel styling */
+.pixelart-footer {
+    margin-top: 32px;
+    padding: 16px;
+    border-top: 2px solid var(--soil-brown);
+    background-color: rgba(30, 77, 36, 0.1);
+    text-align: center;
+}
+
+.pixelart-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.pixelart-footer-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 16px;
+    filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.pixelart-footer p {
+    font-size: 0.6rem;
+    color: var(--leaf-green);
+    margin: 16px 0;
+    flex-basis: 100%;
+}
+
+/* Styles for data elements with sky blue accent */
+.data-accent {
+    color: var(--sky-blue);
+}
+
+/* Teal accent for secondary elements */
+.teal-accent, a {
+    color: var(--teal);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .pixelart-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pixelart-container {
+        margin: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pixelart-container {
+        padding: 16px;
+    }
+    
+    .pixelart-title {
+        font-size: 1.3rem;
+    }
+    
+    .pixelart-description {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Stack columns on mobile as requested */
+    .pixelart-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .pixelart-logo {
+        max-width: 200px;
+    }
+    
+    .pixelart-title {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    
+    .pixelart-footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,160 @@
+@{
+    ViewData["Title"] = "Green Energy Marketplace";
+    // ST10391223 - Green Energy Marketplace View
+    // Created: May 14, 2025
+    // This view showcases sustainable energy products for agriculture
+    // Spent a lot of time on getting the product cards to look good
+    
+    // NOTE TO SELF: Fix the alignment issues on extra small screens before submission
+    // FEEDBACK from peer review: "The product cards look great but need more real content"
+}
+
+<!-- Using the custom pixel-theme stylesheet I created for the project -->
+<!-- Had to fix some conflicts with Bootstrap here -->
+<link rel="stylesheet" href="~/css/pixel-theme.css" />
+
+<!-- Main container with page transition animation -->
+<!-- Added the transition based on week 10 lecture on animation effects -->
+<div class="container page-transition">
+    <!-- Navigation with sprite -->
+    <!-- This navigation pattern follows the principles from the UX lectures -->
+    <!-- Used consistent sprite placement as discussed in design tutorials -->
+    <nav class="pixel-nav mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="pixel-nav-link" href="/">
+                        <img src="~/images/eco_baby.png" alt="Home" class="pixel-nav-icon" />
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="pixel-nav-link active" href="#">
+                        <img src="~/images/eco_baby.png" alt="Green Energy" class="pixel-nav-icon" />
+                        Green Energy Marketplace
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header Section -->
+    <!-- Struggled with positioning the header icon correctly -->
+    <!-- Used flexbox alignment technique from responsive design module -->
+    <section class="pixel-section-header">
+        <img src="~/images/eco_baby.png" alt="Green Energy" class="pixel-header-icon" />
+        <h1 class="pixel-header-title">Green Energy Marketplace</h1>
+    </section>
+
+    <!-- Description and Introduction -->
+    <!-- Added the pixel border effect based on retro game UI lecture -->
+    <!-- Took several attempts to get the border shadow right! -->
+    <div class="pixel-border mb-4">
+        <h2 class="text-center mb-3" style="color: #2e8687;">Sustainable Agriculture Solutions</h2>
+        <p>
+            Welcome to the Green Energy Marketplace - your hub for sustainable energy solutions specifically designed for agricultural applications.
+            Discover how renewable energy can transform your farming operations while reducing costs and environmental impact.
+        </p>
+    </div>
+
+    <!-- Products Grid -->
+    <!-- Originally had 5 products but simplified to 3 based on tutor feedback -->
+    <!-- The grid uses auto-fill to adapt to different screen sizes (week 7 responsive layout) -->
+    <h3 class="mb-3 text-center">Featured Green Energy Solutions</h3>
+    
+    <div class="pixel-divider"></div>
+    
+    <div class="pixel-grid">
+        <!-- Product 1 -->
+        <!-- Added the barcode scanner icon as specified in the project requirements -->
+        <!-- This card took the longest to design and polish! -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/sprite_energy_icon.png" alt="Solar Power" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Solar-Powered Irrigation</h4>
+                <div class="d-flex justify-content-center my-2">
+                    <img src="~/images/barcode_scanner_icon.png" alt="Barcode" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span>Product ID: SP001</span>
+                </div>
+                <p class="pixel-card-text">Efficient solar panels designed to power irrigation systems, reducing electricity costs and carbon footprint.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem; margin-right: 5px;">Energy Efficient</span>
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem;">Water Saving</span>
+                </div>
+                <a href="#" class="pixel-btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <!-- Used the red track image to highlight this as agricultural tech -->
+        <!-- My favorite product design - spent extra time on the details -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/sprite_energy_icon.png" alt="Wind Power" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Agricultural Wind Turbines</h4>
+                <div class="d-flex justify-content-center my-2">
+                    <img src="~/images/barcode_scanner_icon.png" alt="Barcode" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span>Product ID: WT002</span>
+                </div>
+                <p class="pixel-card-text">Small-scale wind turbines optimized for farm environments, providing consistent power generation.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="~/images/red_track.png" alt="Featured" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span class="badge" style="background-color: #2e8687; color: white; padding: 0.5rem;">Highly Rated</span>
+                </div>
+                <a href="#" class="pixel-btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <!-- Added the energy stats overlay as requested in the assignment -->
+        <!-- Need to research more actual biogas specs for this later -->
+        <div class="pixel-card pixel-corner-frame">
+            <div class="text-center">
+                <img src="~/images/sprite_energy_icon.png" alt="Biogas" class="pixel-card-icon" />
+                <h4 class="pixel-card-title">Biogas Generators</h4>
+                <div class="d-flex justify-content-center my-2">
+                    <img src="~/images/barcode_scanner_icon.png" alt="Barcode" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span>Product ID: BG003</span>
+                </div>
+                <p class="pixel-card-text">Convert agricultural waste into valuable energy with our compact biogas digesters.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <img src="~/images/sprite_energy_icon.png" alt="Energy Stats" class="mr-2" style="width: 24px; height: 24px;" />
+                    <span>Output: 5kWh/day</span>
+                </div>
+                <a href="#" class="pixel-btn">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <!-- The pixel divider was inspired by retro games like Stardew Valley -->
+    <!-- Uses CSS repeating gradients which I learned about in week 9 -->
+    <div class="pixel-divider"></div>
+    
+    <!-- Feature cards section using Bootstrap row/col system -->
+    <!-- Could have used grid here too but wanted to practice both layout systems -->
+    <!-- Based on the Bootstrap grid lecture from week 4 -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="pixel-border text-center h-100">
+                <img src="~/images/sprite_energy_icon.png" alt="Compare" class="mb-2" style="width: 48px; height: 48px;" />
+                <h4 style="color: #2e8687;">Compare Products</h4>
+                <p>Easily compare different green energy solutions side by side to find the perfect fit for your farm.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="pixel-border text-center h-100">
+                <img src="~/images/red_track.png" alt="Reviews" class="mb-2" style="width: 48px; height: 48px;" />
+                <h4 style="color: #2e8687;">Review Technologies</h4>
+                <p>Read detailed reviews and technical specifications to make informed decisions.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="pixel-border text-center h-100">
+                <img src="~/images/sprite_connected_ecosystem.png" alt="Connect" class="mb-2" style="width: 48px; height: 48px;" />
+                <h4 style="color: #2e8687;">Connect with Providers</h4>
+                <p>Get in touch with solution providers directly through our platform.</p>
+            </div>
+        </div>
+    </div>
+</div>

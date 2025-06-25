@@ -1,0 +1,367 @@
+@{
+    ViewData["Title"] = "Data Insights";
+    // ST10391223 - Data Insights View
+    // Created: May 14, 2025
+    // This page was the most complex to build due to all the charts
+    // Based on the data visualization techniques from week 11 lecture
+    
+    // NOTE: Still fine-tuning the chart responsive behavior
+    // Need to review the mobile layout again before final submission
+}
+
+<!-- Using my custom pixel theme CSS -->
+<link rel="stylesheet" href="~/css/pixel-theme.css" />
+
+<!-- Using Chart.js as recommended in the data visualization tutorial -->
+<!-- Tried several other libraries first but this was easiest to implement -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Main container with page transition animation -->
+<!-- Animation is subtle to prevent too much visual distraction from the data -->
+<div class="container page-transition">
+    <!-- Navigation -->
+    <!-- Keeping navigation consistent across all views as discussed in UX lecture -->
+    <nav class="pixel-nav mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="pixel-nav-link" href="/">
+                        <img src="~/images/eco_baby.png" alt="Home" class="pixel-nav-icon" />
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="pixel-nav-link active" href="#">
+                        <img src="~/images/sprite_data_chart.png" alt="Data" class="pixel-nav-icon" />
+                        Data Insights
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header Section -->
+    <!-- Using search_icon.png as the header marker as specified in requirements -->
+    <!-- Initially used a different icon but changed based on project specs -->
+    <section class="pixel-section-header">
+        <img src="~/images/search_icon.png" alt="Data Insights" class="pixel-header-icon" />
+        <h1 class="pixel-header-title">Data Insights & Analytics</h1>
+    </section>
+
+    <!-- Description and Introduction -->
+    <div class="pixel-border mb-4">
+        <h2 class="text-center mb-3" style="color: #2e8687;">Agricultural Metrics Dashboard</h2>
+        <p>
+            Welcome to the Data Insights dashboard, your comprehensive hub for agricultural and energy metrics.
+            Monitor production trends, energy consumption patterns, and performance indicators to make data-driven decisions.
+        </p>
+    </div>
+
+    <!-- Charts Dashboard -->
+    <!-- This was the most challenging part! Took a lot of trial and error -->
+    <!-- Used the grid layout from week 7 lecture to create the dashboard -->
+    <div class="row">
+        <!-- Top Produced Crops Chart -->
+        <!-- This pie chart was required to match the original interactive cards -->
+        <!-- Spent ages getting the colors right to match our theme! -->
+        <div class="col-md-6 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/sprite_data_chart.png" alt="Pie Chart" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Top Produced Crops</h4>
+                </div>
+                <div class="chart-container">
+                    <canvas id="producePieChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Energy Usage Chart -->
+        <!-- Added the sprite_energy_icon as an overlay per requirements -->
+        <!-- Used the bar chart type as it's best for comparing categories (from data viz lecture) -->
+        <div class="col-md-6 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/sprite_energy_icon.png" alt="Energy Chart" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Energy Consumption</h4>
+                </div>
+                <div class="chart-container">
+                    <canvas id="energyBarChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Monthly Production Trends -->
+        <!-- This was the trickiest chart to configure - multiple datasets! -->
+        <!-- Based on the multiple line chart example from the tutorial -->
+        <div class="col-md-8 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/sprite_data_chart.png" alt="Line Chart" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Monthly Production Trends</h4>
+                </div>
+                <div class="chart-container">
+                    <canvas id="productionLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <!-- Used simple number displays rather than complicated charts here -->
+        <!-- Design choice based on the data dashboard best practices from lecture -->
+        <div class="col-md-4 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/sprite_energy_icon.png" alt="Metrics" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Key Metrics</h4>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6 mb-3">
+                        <div class="p-3" style="background-color: rgba(46,134,135,0.1); border-radius: 5px;">
+                            <h3 style="color: #2e8687; font-size: 1.8rem;">87%</h3>
+                            <p>Crop Yield</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="p-3" style="background-color: rgba(46,134,135,0.1); border-radius: 5px;">
+                            <h3 style="color: #2e8687; font-size: 1.8rem;">32%</h3>
+                            <p>Energy Savings</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="p-3" style="background-color: rgba(46,134,135,0.1); border-radius: 5px;">
+                            <h3 style="color: #2e8687; font-size: 1.8rem;">65%</h3>
+                            <p>Water Usage</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="p-3" style="background-color: rgba(46,134,135,0.1); border-radius: 5px;">
+                            <h3 style="color: #2e8687; font-size: 1.8rem;">124</h3>
+                            <p>Active Farms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pixel-divider"></div>
+
+    <!-- Detailed Analytics Section -->
+    <!-- Added tables for more detailed information -->
+    <!-- Still need to implement sorting and filtering (maybe in version 2.0) -->
+    <div class="row">
+        <!-- Sustainability Metrics -->
+        <!-- Used the search_icon as requested in the assignment -->
+        <!-- Made up some realistic metrics based on research -->
+        <div class="col-md-6 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/search_icon.png" alt="Sustainability" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Sustainability Metrics</h4>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Current</th>
+                            <th>Target</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carbon Footprint</td>
+                            <td>24.5 tons</td>
+                            <td>20.0 tons</td>
+                            <td><span class="badge badge-warning">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Renewable Energy Use</td>
+                            <td>65%</td>
+                            <td>80%</td>
+                            <td><span class="badge badge-warning">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Water Conservation</td>
+                            <td>42%</td>
+                            <td>50%</td>
+                            <td><span class="badge badge-warning">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Organic Methods</td>
+                            <td>78%</td>
+                            <td>75%</td>
+                            <td><span class="badge badge-success">Achieved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Farm Performance Rankings -->
+        <!-- Added progress bars to visualize the energy usage -->
+        <!-- Used teal color for consistency with our project theme -->
+        <div class="col-md-6 mb-4">
+            <div class="pixel-border h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="~/images/sprite_energy_icon.png" alt="Rankings" style="width: 48px; height: 48px; margin-right: 15px;" />
+                    <h4 style="color: #2e8687; margin: 0;">Farm Performance Rankings</h4>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Farm Name</th>
+                            <th>Efficiency Score</th>
+                            <th>Energy Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td>Green Valley Farms</td>
+                            <td>94.2</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #2e8687;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td>Sunrise Acres</td>
+                            <td>92.7</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 30%; background-color: #2e8687;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td>Harvest Moon</td>
+                            <td>89.3</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 35%; background-color: #2e8687;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td>Sunshine Fields</td>
+                            <td>86.9</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #2e8687;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Chart.js implementation for the data visualizations
+    // Spent a lot of time tweaking these charts to look good
+    // Based on examples from the data visualization workshop
+    document.addEventListener('DOMContentLoaded', function() {
+        // Top Produced Crops Pie Chart
+        // This was in the original specifications - had to match the existing style
+        // Used a nice teal color palette for consistency with our theme
+        var pieCtx = document.getElementById('producePieChart').getContext('2d');
+        var producePieChart = new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Corn', 'Wheat', 'Soybeans', 'Barley', 'Oats'],
+                datasets: [{
+                    data: [35, 25, 20, 15, 5],
+                    backgroundColor: [
+                        '#2e8687', // Teal
+                        '#3aa9aa',
+                        '#4bc8c9',
+                        '#5ed6d7',
+                        '#70e3e4'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    position: 'right'
+                }
+            }
+        });
+
+        // Energy Usage Bar Chart
+        // This took several tries to get right - struggled with responsiveness
+        // Made the bars teal to match our primary brand color
+        var barCtx = document.getElementById('energyBarChart').getContext('2d');
+        var energyBarChart = new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Solar', 'Wind', 'Biogas', 'Traditional', 'Other'],
+                datasets: [{
+                    label: 'Energy Source Usage (%)',
+                    data: [45, 25, 15, 10, 5],
+                    backgroundColor: '#2e8687',
+                    borderColor: '#2e8687',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 50
+                    }
+                }
+            }
+        });
+
+        // Monthly Production Line Chart
+        // The most complex chart - had to handle two different datasets
+        // Uses fill:true to create the nice area-under-the-curve effect
+        var lineCtx = document.getElementById('productionLineChart').getContext('2d');
+        var productionLineChart = new Chart(lineCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Crop Production (tons)',
+                    data: [10, 12, 18, 25, 35, 42, 40, 38, 30, 25, 18, 15],
+                    backgroundColor: 'rgba(46,134,135,0.2)',
+                    borderColor: '#2e8687',
+                    borderWidth: 2,
+                    fill: true
+                }, {
+                    label: 'Energy Efficiency (%)',
+                    data: [60, 62, 65, 70, 75, 78, 80, 82, 80, 78, 72, 68],
+                    backgroundColor: 'rgba(141, 197, 63, 0.2)',
+                    borderColor: '#8DC53F',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>

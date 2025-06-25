@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Agri-Energy_st10391223.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Agri-Energy_st10391223.wob3xo5iok.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\css\\interactive-cards.css",
+      "PackagePath": "staticwebassets\\css\\interactive-cards.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\css\\pixel-about.css",
+      "PackagePath": "staticwebassets\\css\\pixel-about.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\css\\pixel-theme.css",
+      "PackagePath": "staticwebassets\\css\\pixel-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\fonts\\pixel_game.otf",
+      "PackagePath": "staticwebassets\\fonts\\pixel_game.otf"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\add_farmer.png",
+      "PackagePath": "staticwebassets\\images\\add_farmer.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\addproduct_icon.png",
+      "PackagePath": "staticwebassets\\images\\addproduct_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\barcode_scanner_icon.png",
+      "PackagePath": "staticwebassets\\images\\barcode_scanner_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\calendar_tomato.png",
+      "PackagePath": "staticwebassets\\images\\calendar_tomato.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\clipboard_icon.png",
+      "PackagePath": "staticwebassets\\images\\clipboard_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\crate_of_crops.png",
+      "PackagePath": "staticwebassets\\images\\crate_of_crops.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\dashboard_icon.png",
+      "PackagePath": "staticwebassets\\images\\dashboard_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\database_icon.png",
+      "PackagePath": "staticwebassets\\images\\database_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\eco_baby.png",
+      "PackagePath": "staticwebassets\\images\\eco_baby.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\edit_profile.png",
+      "PackagePath": "staticwebassets\\images\\edit_profile.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\employee_icon.png",
+      "PackagePath": "staticwebassets\\images\\employee_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\farmer_icon.png",
+      "PackagePath": "staticwebassets\\images\\farmer_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\farmhouse_icon.png",
+      "PackagePath": "staticwebassets\\images\\farmhouse_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\header_about.png",
+      "PackagePath": "staticwebassets\\images\\header_about.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\header_image.png",
+      "PackagePath": "staticwebassets\\images\\header_image.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\help_icon.png",
+      "PackagePath": "staticwebassets\\images\\help_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\logo_icon.png",
+      "PackagePath": "staticwebassets\\images\\logo_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\logout_icon.png",
+      "PackagePath": "staticwebassets\\images\\logout_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\producttag_icon.png",
+      "PackagePath": "staticwebassets\\images\\producttag_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\profile_card.png",
+      "PackagePath": "staticwebassets\\images\\profile_card.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\red_track.png",
+      "PackagePath": "staticwebassets\\images\\red_track.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\search_icon.png",
+      "PackagePath": "staticwebassets\\images\\search_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_clipboard_employee.png",
+      "PackagePath": "staticwebassets\\images\\sprite_clipboard_employee.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_connected_ecosystem.png",
+      "PackagePath": "staticwebassets\\images\\sprite_connected_ecosystem.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_crop_field.png",
+      "PackagePath": "staticwebassets\\images\\sprite_crop_field.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_data_chart.png",
+      "PackagePath": "staticwebassets\\images\\sprite_data_chart.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_energy_icon.png",
+      "PackagePath": "staticwebassets\\images\\sprite_energy_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\images\\sprite_secure_lock.png",
+      "PackagePath": "staticwebassets\\images\\sprite_secure_lock.png"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\sprites\\generate-sprites.js",
+      "PackagePath": "staticwebassets\\sprites\\generate-sprites.js"
+    },
+    {
+      "Id": "C:\\Users\\keent\\source\\repos\\Agri-Energy_st10391223\\Agri-Energy_st10391223\\wwwroot\\sprites\\placeholder-sprites.html",
+      "PackagePath": "staticwebassets\\sprites\\placeholder-sprites.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Agri-Energy_st10391223.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Agri-Energy_st10391223.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Agri-Energy_st10391223.props",
+      "PackagePath": "build\\Agri-Energy_st10391223.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Agri-Energy_st10391223.props",
+      "PackagePath": "buildMultiTargeting\\Agri-Energy_st10391223.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Agri-Energy_st10391223.props",
+      "PackagePath": "buildTransitive\\Agri-Energy_st10391223.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

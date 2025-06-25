@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Agri-Energy_st10391223.props" />
+</Project>

@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Agri_Energy_st10391223
+build_property.RootNamespace = Agri_Energy_st10391223
+build_property.ProjectDir = C:\Users\keent\source\repos\Agri-Energy_st10391223\Agri-Energy_st10391223\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\keent\source\repos\Agri-Energy_st10391223\Agri-Energy_st10391223
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Employee/AddFarmer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRmFybWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Employee/AllProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWxsUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Employee/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Employee/FarmerCreated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRmFybWVyQ3JlYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Employee/FarmerDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRmFybWVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEFkZFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/DeleteProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXERlbGV0ZVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Farmer/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEVkaXRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/ConnectedEcosystem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcQ29ubmVjdGVkRWNvc3lzdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/DataInsights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcRGF0YUluc2lnaHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/Educational.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcRWR1Y2F0aW9uYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/EmployeePortal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcRW1wbG95ZWVQb3J0YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/FarmerRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcRmFybWVyUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/GreenEnergyMarketplace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcR3JlZW5FbmVyZ3lNYXJrZXRwbGFjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Pixel/SmartSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxcU21hcnRTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keent/source/repos/Agri-Energy_st10391223/Agri-Energy_st10391223/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-84rwrlhwog

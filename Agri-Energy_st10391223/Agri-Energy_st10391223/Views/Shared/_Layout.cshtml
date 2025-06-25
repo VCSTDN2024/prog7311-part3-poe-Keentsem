@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Agri-Energy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/interactive-cards.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css" />
+</head>
+<body>
+    <div class="header-wrapper">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="~/images/logo_icon.png" alt="Agri-Energy Logo" class="nav-icon" />
+                <span class="ms-2">Agri-Energy</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">
+                            <img src="~/images/dashboard_icon.png" alt="Home" class="nav-icon" />
+                            Home
+                        </a>
+                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @if (User.IsInRole("Farmer"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Farmer" asp-action="Dashboard">
+                                    <img src="~/images/dasshboard_icon.png" alt="Dashboard" class="nav-icon" />
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Farmer" asp-action="AddProduct">
+                                    <img src="~/images/addproduct_icon.png" alt="Add Product" class="nav-icon" />
+                                    Add Product
+                                </a>
+                            </li>
+                        }
+                        else if (User.IsInRole("Employee"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Employee" asp-action="Dashboard">
+                                    <img src="~/images/dasshboard_icon.png" alt="Dashboard" class="nav-icon" />
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Employee" asp-action="AddFarmer">
+                                    <img src="~/images/employee_icon.png" alt="Add Farmer" class="nav-icon" />
+                                    Add Farmer
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Employee" asp-action="AllProducts">
+                                    <img src="~/images/producttag_icon.png" alt="All Products" class="nav-icon" />
+                                    All Products
+                                </a>
+                            </li>
+                        }
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="About">
+                            <img src="~/images/logo_icon.png" alt="About" class="nav-icon" />
+                            About
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                                <img src="~/images/profile_card.png" alt="User" class="nav-icon" />
+                                @User.Identity.Name
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                @if (User.IsInRole("Farmer"))
+                                {
+                                    <li><a class="dropdown-item" asp-controller="Farmer" asp-action="Edit"><img src="~/images/edit_profile.png" alt="Edit" class="nav-icon" style="width:18px;height:18px;" /> Edit Profile</a></li>
+                                }
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form asp-controller="Account" asp-action="Logout" method="post">
+                                        <button type="submit" class="dropdown-item">
+                                            <img src="~/images/logout_icon.png" alt="Logout" class="nav-icon" style="width:18px;height:18px;" /> Logout
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">
+                                <img src="~/images/profile_card.png" alt="Login" class="nav-icon" /> Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Register">
+                                <img src="~/images/profile_card.png" alt="Register" class="nav-icon" /> Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="EmployeeLogin" style="color: #2e8687; font-weight: bold;">
+                                <img src="~/images/employee_icon.png" alt="Employee Sign In" class="nav-icon" /> Employee Sign In
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pb-5">
+        @RenderBody()
+    </main>
+
+    <footer class="footer text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year Agri-Energy Farmer Product Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

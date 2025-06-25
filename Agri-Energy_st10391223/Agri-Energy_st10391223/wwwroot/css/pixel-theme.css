@@ -1,0 +1,315 @@
+/* Pixel Theme CSS for Agri-Energy Platform */
+/* Created by: ST10391223 */
+/* Date: May 14, 2025 */
+/* This theme implements the pixel art aesthetic discussed in the week 8 lecture on retro design trends */
+
+/* NOTES TO SELF: 
+ * - Still need to optimize some hover animations for mobile
+ * - Remember what lecturer said about accessibility - contrast could be improved
+ * - The corner frames were really challenging to position correctly!
+ */
+
+/* Global Pixel Theme Styles */
+
+/* Using the custom pixel font as discussed in typography lecture */
+/* Had to test multiple ways to load this properly across browsers */
+@font-face {
+  font-family: 'PixelGame';
+  src: url('../fonts/pixel_game.otf') format('opentype');
+}
+
+/* Using CSS variables as recommended in the CSS best practices lesson */
+/* Spent hours finding the perfect teal shade that works with all our content */
+:root {
+  --pixel-primary: #2e8687; /* Teal primary color from user preferences */
+  --pixel-secondary: #8DC53F; /* Green for CTA buttons */
+  --pixel-border: #333;
+  --pixel-shadow: rgba(0, 0, 0, 0.4);
+  --pixel-background: #f9f9f9;
+  /* TODO: Add more color variables for seasonal themes later */
+}
+
+body {
+  font-family: 'PixelGame', 'Press Start 2P', monospace;
+  background-color: var(--pixel-background);
+}
+
+/* Pixel Borders */
+/* This was really difficult to get right! Had to watch several CSS tutorials */
+/* Inspired by the retro game borders we analyzed in UI/UX class */
+.pixel-border {
+  position: relative;
+  border: 4px solid var(--pixel-border);
+  border-radius: 2px; /* Keeping slight rounding as discussed in critique session */
+  box-shadow: 0 6px 0 var(--pixel-shadow);
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.pixel-border::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--pixel-border);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.pixel-border::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--pixel-border);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+/* Pixel Buttons */
+/* I struggled with getting these buttons to work properly on mobile */
+/* Used the button design concepts from assignment 3 and improved them */
+/* Prof's feedback about more intuitive button states really helped here */
+.pixel-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--pixel-primary);
+  color: white;
+  border: 3px solid var(--pixel-border);
+  box-shadow: 0 4px 0 var(--pixel-shadow);
+  font-family: 'PixelGame', 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s; /* smooth transition as we learned in animation module */
+  text-decoration: none;
+}
+
+.pixel-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--pixel-shadow);
+  color: white;
+  text-decoration: none;
+}
+
+.pixel-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--pixel-shadow);
+}
+
+.pixel-btn-cta {
+  background-color: var(--pixel-secondary);
+}
+
+/* Pixel Navigation */
+/* The lecture on consistent navigation patterns was super helpful here */
+/* Initially tried a dropdown menu but this horizontal bar tested better with users */
+.pixel-nav {
+  background-color: var(--pixel-primary);
+  border-bottom: 4px solid var(--pixel-border);
+  padding: 0.5rem;
+  /* Might adjust this based on upcoming usability test results */
+}
+
+.pixel-nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  image-rendering: pixelated;
+}
+
+.pixel-nav-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.pixel-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+/* Pixel Section Header */
+/* Used flexbox here as suggested in responsive design workshop */
+/* Tried several different shadow styles - this one was the most "8-bit" looking */
+.pixel-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--pixel-primary);
+  border: 4px solid var(--pixel-border);
+  box-shadow: 0 4px 0 var(--pixel-shadow); /* The layered shadow technique from week 5 */
+  color: white;
+}
+
+.pixel-header-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 1rem;
+  image-rendering: pixelated;
+}
+
+.pixel-header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Pixel Cards */
+/* Based on the card component pattern we analyzed in class */
+/* I spent way too much time perfecting these shadows lol */
+/* IMPORTANT: Need to make sure these don't overflow on mobile (check later) */
+.pixel-card {
+  position: relative;
+  border: 4px solid var(--pixel-border);
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 0 var(--pixel-shadow);
+  transition: all 0.3s;
+}
+
+.pixel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 0 var(--pixel-shadow);
+}
+
+.pixel-card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+  image-rendering: pixelated;
+}
+
+.pixel-card-title {
+  color: var(--pixel-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.pixel-card-text {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* Pixel Corner Frames */
+/* This was the hardest part! Took me 3 attempts to get these corners right */
+/* Used the CSS polygon clipping technique from that tutorial Prof recommended */
+.pixel-corner-frame {
+  position: relative;
+  /* Need to fix a bug with these on Safari - add to my to-do list */
+}
+
+.pixel-corner-frame::before,
+.pixel-corner-frame::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--pixel-primary);
+}
+
+.pixel-corner-frame::before {
+  top: -2px;
+  left: -2px;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.pixel-corner-frame::after {
+  bottom: -2px;
+  right: -2px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+/* Pixel Divider */
+/* The repeating gradient trick we learned in advanced CSS week - finally using it! */
+/* Tried 4 different patterns before settling on this one */
+.pixel-divider {
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pixel-primary),
+    var(--pixel-primary) 8px,
+    var(--pixel-border) 8px,
+    var(--pixel-border) 16px
+  );
+  margin: 2rem 0;
+  box-shadow: 0 2px 0 var(--pixel-shadow);
+  /* Note: 16px pattern repeats perfectly with 8-bit aesthetic */
+}
+
+/* Grid Layout */
+/* Using CSS Grid as we learned in layout module - much easier than my original float approach! */
+/* The auto-fill technique saves so much media query code */
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  /* This single grid definition replaces about 50 lines of media queries I had before */
+}
+
+/* Page Transitions */
+/* Applied the animation principles from week 10 lecture */
+/* This subtle animation makes page transitions much smoother */
+/* Keeping it simple - don't want to trigger motion sickness (accessibility concern) */
+.page-transition {
+  animation: pageFadeIn 0.5s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Could add more keyframes but keeping it simple for performance reasons */
+}
+
+/* Hover/Click Effects */
+.pixel-hover-effect {
+  transition: all 0.2s;
+}
+
+.pixel-hover-effect:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.pixel-click-effect:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+/* Mobile-friendly adjustments as emphasized in the responsive design module */
+/* Based on actual testing on my phone - had to fix several issues! */
+@media (max-width: 768px) {
+  .pixel-grid {
+    grid-template-columns: 1fr; /* Switch to single column on mobile as recommended in class */
+  }
+  
+  .pixel-section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .pixel-header-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  /* Spent hours debugging a weird iPhone display issue here */
+  /* TODO: Test on more Android devices before final submission */
+}

@@ -1,0 +1,130 @@
+@model IEnumerable<Agri_Energy_st10391223.Models.Product>
+
+@{
+    ViewData["Title"] = "All Products";
+    var categories = (List<string>)ViewData["Categories"] ?? new List<string>();
+    var farmers = (List<Agri_Energy_st10391223.Models.Farmer>)ViewData["Farmers"] ?? new List<Agri_Energy_st10391223.Models.Farmer>();
+    
+    var selectedCategory = (string)ViewData["SelectedCategory"];
+    var selectedFarmerName = (string)ViewData["SelectedFarmerName"];
+    var selectedStartDate = (DateTime?)ViewData["SelectedStartDate"];
+    var selectedEndDate = (DateTime?)ViewData["SelectedEndDate"];
+}
+
+<div class="container mt-4">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3><i class="bi bi-filter-square"></i> Product Filters</h3>
+        </div>
+        <div class="card-body">
+            <form method="get" action="@Url.Action("AllProducts")" id="filterForm">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select name="category" id="category" class="form-select">
+                            <option value="">All Categories</option>
+                            @foreach (var category in categories)
+                            {
+                                <option value="@category" selected="@(selectedCategory == category)">@category</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="farmerName" class="form-label">Farmer</label>
+                        <select name="farmerName" id="farmerName" class="form-select">
+                            <option value="">All Farmers</option>
+                            @foreach (var farmer in farmers)
+                            {
+                                <option value="@farmer.Name" selected="@(selectedFarmerName == farmer.Name)">@farmer.Name @farmer.Surname</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" name="startDate" value="@(selectedStartDate?.ToString("yyyy-MM-dd"))">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="endDate" class="form-label">End Date</label>
+                        <input type="date" class="form-control" id="endDate" name="endDate" value="@(selectedEndDate?.ToString("yyyy-MM-dd"))">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-search"></i> Apply Filters
+                        </button>
+                        <a href="@Url.Action("AllProducts")" class="btn btn-secondary">
+                            <i class="bi bi-x-circle"></i> Clear Filters
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4><i class="bi bi-database"></i> All Products</h4>
+                <span class="badge bg-light text-dark">Total: @Model.Count()</span>
+            </div>
+        </div>
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="productsTable">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Production Date</th>
+                                <th>Farmer</th>
+                                <th>Farm</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model)
+                            {
+                                <tr>
+                                    <td>@product.Name</td>
+                                    <td><span class="badge bg-info text-white">@product.Category</span></td>
+                                    <td>@product.ProductionDate.ToString("yyyy-MM-dd")</td>
+                                    <td>@(product.Farmer?.Name) @(product.Farmer?.Surname)</td>
+                                    <td>@product.Farmer?.FarmName</td>
+                                    <td>@product.Farmer?.Region</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle"></i> No products match your filter criteria.
+                </div>
+            }
+        </div>
+        <div class="card-footer">
+            <a asp-action="Dashboard" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $('#productsTable').DataTable({
+                "order": [[2, "desc"]], // Order by production date (newest first)
+                "dom": 'Bfrtip',
+                "buttons": [
+                    'copy', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
+}

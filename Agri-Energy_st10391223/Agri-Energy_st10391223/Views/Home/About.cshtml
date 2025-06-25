@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = "About";
+}
+
+<link rel="stylesheet" href="~/css/pixel-about.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+<div class="pixelart-container">
+    <!-- 1. Header Section -->
+    <div class="pixelart-header">
+        <img src="~/images/header_about.png" alt="Agri-Energy Logo" class="pixelart-logo" />
+        <h1 class="pixelart-title">About the Agri-Energy Connect Platform</h1>
+    </div>
+    
+    <!-- 2. Platform Overview -->
+    <div class="pixelart-overview">
+        <p class="pixelart-description">
+            The Agri-Energy Connect Platform is designed to empower farmers and employees to collaborate efficiently by managing 
+            agricultural products and monitoring production data, all while promoting sustainability through smart energy practices.
+        </p>
+    </div>
+    
+    <!-- 3. Pixel Sprite Icons (Feature Grid) -->
+    <div class="pixelart-features">
+        <link rel="stylesheet" href="~/css/pixel-theme.css" />
+        <!-- Farmer Role -->
+        <a href="/Pixel/FarmerRole" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/farmer_icon.png" alt="Farmer Role" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Farmer Role</h3>
+            <p class="pixelart-sprite-desc">Dedicated tools for farmers to manage products and track production.</p>
+        </a>
+        
+        <!-- Food Production -->
+        <a href="/Pixel/Educational" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_crop_field.png" alt="Food Production" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Food Production</h3>
+            <p class="pixelart-sprite-desc">Efficient tracking of crop yields and agricultural outputs.</p>
+        </a>
+        
+        <!-- Sustainable Energy -->
+        <a href="/Pixel/GreenEnergyMarketplace" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_energy_icon.png" alt="Sustainable Energy" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Sustainable Energy</h3>
+            <p class="pixelart-sprite-desc">Integration of energy-efficient farming practices and monitoring.</p>
+        </a>
+        
+        <!-- Connected Ecosystem -->
+        <a href="/Pixel/ConnectedEcosystem" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_connected_ecosystem.png" alt="Connected Ecosystem" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Connected Ecosystem</h3>
+            <p class="pixelart-sprite-desc">Seamless integration between all stakeholders in the agricultural chain.</p>
+        </a>
+        
+        <!-- Employee Portal -->
+        <a href="/Pixel/EmployeePortal" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_clipboard_employee.png" alt="Employee Management" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Employee Portal</h3>
+            <p class="pixelart-sprite-desc">Tools for employees to manage and support farmer activities.</p>
+        </a>
+        
+        <!-- Secure Access - Not linked as this is a system feature -->
+        <div class="pixelart-feature-item">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_secure_lock.png" alt="Security" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Secure Access</h3>
+            <p class="pixelart-sprite-desc">Protected login system with role-based permissions and data security.</p>
+        </div>
+        
+        <!-- Data Insights -->
+        <a href="/Pixel/DataInsights" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/sprite_data_chart.png" alt="Data Analytics" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Data Insights</h3>
+            <p class="pixelart-sprite-desc">Visual analytics and reporting for informed decision making.</p>
+        </a>
+        
+        <!-- Smart Search -->
+        <a href="/Pixel/SmartSearch" class="pixelart-feature-item pixel-hover-effect" style="text-decoration: none; cursor: pointer;">
+            <div class="pixelart-sprite-container">
+                <img src="~/images/search_icon.png" alt="Search" class="pixelart-sprite" />
+            </div>
+            <h3 class="pixelart-sprite-title">Smart Search</h3>
+            <p class="pixelart-sprite-desc">Powerful filtering and search functionality across all platform data.</p>
+        </a>
+    </div>
+    
+    <!-- 6. Footer -->
+    <div class="pixelart-footer">
+        <div class="pixelart-footer-content">
+            <img src="~/images/farmer_icon.png" alt="Farmer" class="pixelart-footer-icon" />
+            <img src="~/images/sprite_energy_icon.png" alt="Energy" class="pixelart-footer-icon" />
+            <p>Agri-Energy Connect Platform © 2025. Designed for Empowering Agriculture Sustainably.</p>
+            <img src="~/images/sprite_crop_field.png" alt="Crops" class="pixelart-footer-icon" />
+            <img src="~/images/sprite_data_chart.png" alt="Data" class="pixelart-footer-icon" />
+        </div>
+    </div>
+</div>
